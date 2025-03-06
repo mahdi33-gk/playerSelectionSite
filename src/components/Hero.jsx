@@ -1,13 +1,25 @@
-import React from 'react';
+import React from "react";
 
 const Hero = () => {
-    return (
-        <div>
-            
-            <img className='w-full relative object-cover rounded-xl' src="/images/bg-shadow.png" alt="" />
-            <img className='absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' src="/images/banner-main.png" alt="" />
+  return (
+    <div
+      class="hero min-h-screen"
+      style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+          <button class="btn btn-primary">Get Started</button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Hero;
